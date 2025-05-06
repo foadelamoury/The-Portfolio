@@ -226,7 +226,7 @@ contactForm.addEventListener('submit', function(e) {
     };
 
     // Send email using EmailJS
-    emailjs.send('service_xgj01zj', 'template_qzq7rju', formData)
+    emailjs.send('service_iolqgmd', 'template_qzq7rju', formData)
         .then(function(response) {
             console.log('SUCCESS!', response);
             alert('Message sent successfully!');
