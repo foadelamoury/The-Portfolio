@@ -932,14 +932,16 @@ and Unreal.
 
     <!--==================== EMAILJS ====================-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script type="text/javascript">
-    (function() {
-        emailjs.init("BXe7tPIhHG3wMPUjM-_e2"); // Replace with your EmailJS user ID
-    })();
-</script>
 
     <!--==================== MAIN JS ====================-->
     <script src="./packages/js/main.js"></script>
+
+    <!-- Add this at the top or after EmailJS is loaded -->
+    <script>
+        (function() {
+            emailjs.init("BXe7tPIhHG3wMPUjM-_e2");
+        })();
+    </script>
 </body>
 
 </html>
